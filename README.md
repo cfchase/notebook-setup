@@ -9,7 +9,6 @@ curl -o- https://raw.githubusercontent.com/cfchase/notebook-setup/master/install
 ```
 
 ## Uninstalling
-Install scripts and pre-requisites.
 ```shell
 curl -o- https://raw.githubusercontent.com/cfchase/notebook-setup/master/uninstall.sh | bash
 ```

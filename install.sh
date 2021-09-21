@@ -15,7 +15,7 @@ echo 'Installing GitHub client'
 mkdir -p "${INSTALL_TMP}"
 mkdir -p "${BIN_DIR}/"
 cd "${INSTALL_TMP}" || exit
-GH_VERSION='1.11.0'
+GH_VERSION='2.0.0'
 wget "https://github.com/cli/cli/releases/download/v${GH_VERSION}/gh_${GH_VERSION}_linux_amd64.tar.gz"
 tar -xvf "gh_${GH_VERSION}_linux_amd64.tar.gz"
 mv "gh_${GH_VERSION}_linux_amd64/bin/gh" ${BIN_DIR}
@@ -29,6 +29,6 @@ mv oc /opt/app-root/bin/oc
 
 
 echo 'Cleaning up'
- rm -rf "${INSTALL_TMP}"
+rm -rf "${INSTALL_TMP}"
 
 popd || exit
