@@ -8,9 +8,6 @@ INSTALL_TMP="/tmp/notebook-setup"
 echo 'Installing gitconfig'
 wget -O "${HOME}/.gitconfig" https://raw.githubusercontent.com/cfchase/notebook-setup/master/.gitconfig
 
-echo 'Installing cookiecutter package'
-pip install cookiecutter
-
 echo 'Installing GitHub client'
 mkdir -p "${INSTALL_TMP}"
 mkdir -p "${BIN_DIR}/"
